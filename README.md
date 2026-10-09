@@ -5,6 +5,8 @@ or fail to boot the GPU under load. One self-contained Python 3 program (`sparkd
 a GB10 instability investigation (instant power-offs under GPU load, traced to a degraded GPU thermal interface) so the same evidence can be collected and the same conclusions
 rediscovered on any unit, and produces a far more detailed report than NVIDIA's field diagnostic (`partnerdiag`).
 
+The investigation this tool packages is written up in [`RMA-REPORT.md`](RMA-REPORT.md).
+
 ```
 sudo ./sparkdiag.py all --out /var/log/sparkdiag                 # inventory + forensics + report (read-only)
 sudo ./sparkdiag.py telemetry --out /var/log/sparkdiag --udp collector.example:9999   # crash-survivable sampler
